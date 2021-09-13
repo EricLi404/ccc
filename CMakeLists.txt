@@ -3,4 +3,6 @@ project(ccc C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(ccc main.c test.c)
+aux_source_directory(./cases S_CASES)
+
+add_executable(ccc main.c  ${S_CASES})
